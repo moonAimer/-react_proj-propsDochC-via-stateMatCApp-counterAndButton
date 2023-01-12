@@ -6,17 +6,13 @@ import Counter from "./components/Counter";
 function App() {
   const [initialCount, setInitialCount] = useState(0);
 
-  const myFn = () => {
-    setInitialCount(+=+initialCount);
-  };
-
   return (
     <div className="App">
       <Counter count={initialCount} />
-      <Button onClick={myFn} />
-      <Button />
-      <Button />
-      <Button />
+      <Button count={initialCount} click={setInitialCount} />
+      <Button count={initialCount} click={setInitialCount} />
+      <Button count={initialCount} click={setInitialCount} />
+      <Button count={initialCount} click={setInitialCount} />
     </div>
   );
 }
