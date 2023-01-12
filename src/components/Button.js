@@ -1,9 +1,13 @@
 function Button({ count, click }) {
-  const myFn = () => {
-    click(count + 1);
-  };
-
-  return <button onClick={myFn}>Text</button>;
+  return (
+    <button
+      onClick={() => {
+        click(count + 1);
+      }}
+    >
+      Text
+    </button>
+  );
 }
 
 export default Button;
