@@ -9,10 +9,26 @@ function App() {
   return (
     <div className="App">
       <Counter count={initialCount} />
-      <Button count={initialCount} click={setInitialCount} />
-      <Button count={initialCount} click={setInitialCount} />
-      <Button count={initialCount} click={setInitialCount} />
-      <Button count={initialCount} click={setInitialCount} />
+      <Button
+        click={() => {
+          setInitialCount(initialCount + 1);
+        }}
+      />
+      <Button
+        click={() => {
+          setInitialCount(initialCount + 1);
+        }}
+      />{" "}
+      <Button
+        click={() => {
+          setInitialCount(initialCount + 1);
+        }}
+      />{" "}
+      <Button
+        click={() => {
+          setInitialCount(initialCount + 1);
+        }}
+      />
     </div>
   );
 }
