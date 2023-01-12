@@ -1,5 +1,5 @@
-function Button() {
-  return <button onClick={myFn}>Text</button>;
+function Button({ onClick }) {
+  return <button onClick={onClick}>Text</button>;
 }
 
 export default Button;

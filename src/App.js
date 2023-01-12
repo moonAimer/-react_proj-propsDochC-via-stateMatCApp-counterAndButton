@@ -7,13 +7,13 @@ function App() {
   const [initialCount, setInitialCount] = useState(0);
 
   const myFn = () => {
-    setInitialCount();
+    setInitialCount(+=+initialCount);
   };
 
   return (
     <div className="App">
-      <Counter />
-      <Button />
+      <Counter count={initialCount} />
+      <Button onClick={myFn} />
       <Button />
       <Button />
       <Button />

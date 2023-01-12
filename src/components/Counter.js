@@ -1,5 +1,5 @@
-function Counter() {
-  return <h1>{initialCount}</h1>;
+function Counter({ count }) {
+  return <h1>{count}</h1>;
 }
 
 export default Counter;
